@@ -1,14 +1,146 @@
 ﻿body {
-    font-size: .85em;
-    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
-    color: #232323;
-    background-color: #fff;
+    font-family: Cambria, Georgia, "Times New Roman";
+    margin: 0;
 }
 
-header, footer, nav, section {
+div#header div.title, div.item h3, div.item h4, div.pager a {
+    font: bold 1em "Arial Narrow", "Franklin Gothic Medium", Arial;
+}
+
+div#header {
+    background-color: #444;
+    border-bottom: 2px solid #111;
+    color: White;
+}
+
+div#header div.title {
+    font-size: 2em;
+    padding: .6em;
+}
+
+div#content {
+    border-left: 2px solid gray;
+    margin-left: 9em;
+    padding: 1em;
+}
+
+div#categories {
+    float: left;
+    width: 8em;
+    padding: .3em;
+}
+
+/* BEGIN Item region*/
+div.item {
+    border-top: 1px dotted gray;
+    padding-top: .7em;
+    margin-bottom: .7em;
+}
+
+div.item:first-child {
+    border-top: none;
+    padding-top: 0;
+}
+
+div.item h3 {
+    font-size: 1.3em;
+    margin: 0 0 .25em 0;
+}
+
+div.item h4 {
+    font-size: 1.1em;
+    margin: .4em 0 0 0;
+}
+/* END Item region*/
+
+/* BEGIN Paging region*/
+div.pager {
+    text-align: right;
+    border-top: 2px solid silver;
+    padding: .5em 0 0 0;
+    margin-top: 1em;
+}
+
+div.pager a {
+    font-size: 1.1em;
+    color: #666;
+    text-decoration: none;
+    padding: 0 .4em 0 .4em;
+}
+
+div.pager a:hover {
+    background-color: silver;
+}
+
+div.pager a.selected {
+    background-color: #353535;
+    color: white;
+}
+/* END Paging region*/
+
+/* BEGIN Navigation region*/
+div#categories a {
+    font: bold 1.1em "Arial Narrow", "Franklin Gothic Medium", Arial;
     display: block;
+    text-decoration: none;
+    padding: .6em;
+    color: black;
+    border-bottom: 1px solid silver;
 }
 
+div#categories a.selected {
+    background-color: #666;
+    color: white; 
+}
+
+div#categories a:hover {
+    background-color: #ccc;
+}
+
+div#categories a.selected:hover {
+    background-color: #666;
+}
+/* END Navigation region*/
+
+
+/* BEGIN add to cart region*/
+form {
+    margin: 0;
+    padding: 0;
+}
+
+div.item form {
+    float: right;
+}
+
+div.item input {
+    color: White;
+    background-color: #333;
+    border: 1px solid black;
+    cursor: pointer;
+}
+/* END add to cart region*/
+
+/* BEGIN Cart region*/
+h2 {
+    margin-top: 0.3em;
+}
+
+tfoot td {
+    border-top: 1px dotted gray;
+    font-weight: bold;
+}
+
+.actionButtons a, input.actionButtons {
+    font: .8em Arial;
+    color: White;
+    margin: .5em;
+    text-decoration: none;
+    padding: .15em 1.5em .2em 1.5em;
+    background-color: #353535;
+    border: 1px solid black;
+}
+/* END Cart region*/
 
 /* Styles for basic forms
 -----------------------------------------------------------*/

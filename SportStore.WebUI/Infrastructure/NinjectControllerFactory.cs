@@ -26,10 +26,10 @@ namespace SportStore.WebUI.Infrastructure
         private void AddBindings()
         {
             Product[] _products = {
-            new Product { Name = "Kayak", Category = "Watersports", Price = 275M},
-            new Product { Name = "Lifejacket", Category = "Watersports", Price = 48.95M},
-            new Product { Name = "Soccer ball", Category = "Soccer", Price = 19.50M},
-            new Product { Name = "Corner flag", Category = "Soccer", Price = 34.95M}};
+            new Product { Name = "Kayak", Category = "Watersports", Price = 275M, Description = "Very usefull thing", ProductID = 1},
+            new Product { Name = "Lifejacket", Category = "Watersports", Price = 48.95M, Description = "Very usefull thing", ProductID = 2},
+            new Product { Name = "Soccer ball", Category = "Soccer", Price = 19.50M, Description = "Very usefull thing", ProductID = 3},
+            new Product { Name = "Corner flag", Category = "Soccer", Price = 34.95M, Description = "Very usefull thing", ProductID = 4}};
 
             Mock<IProductRepository> mock = new Mock<IProductRepository>();
             mock.Setup(m => m.Products).Returns(_products.ToList().AsQueryable());
